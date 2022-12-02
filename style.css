@@ -1,0 +1,50 @@
+/* Fond de l'image (background) */
+
+body {
+  background-image: url("img/NightBackground.jpg");
+}
+
+/* Taille de l'ovni */
+
+img {
+  width: 76px;
+}
+
+/* Posionnement de l'ovni et style de l'animation */
+
+.img__box {
+  text-align: center;
+  margin-top: 5em;
+  animation-name: flying__saucer;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* Paramètrage des mouvements de l'animation */
+
+@keyframes flying__saucer {
+  0% {
+    transform: translate(0, 0px);
+    -webkit-transform: translate(0, 0px);
+    -moz-transform: translate(0, 0px);
+    -ms-transform: translate(0, 0px);
+    -o-transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 15px);
+    -webkit-transform: translate(0, 15px);
+    -moz-transform: translate(0, 15px);
+    -ms-transform: translate(0, 15px);
+    -o-transform: translate(0, 15px);
+  }
+
+  100% {
+    transform: translate(0, 0px);
+    -webkit-transform: translate(0, 0px);
+    -moz-transform: translate(0, 0px);
+    -ms-transform: translate(0, 0px);
+    -o-transform: translate(0, 0px);
+  }
+}
